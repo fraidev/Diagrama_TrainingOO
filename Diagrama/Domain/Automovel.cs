@@ -25,7 +25,12 @@ namespace Diagrama.Domain
         
         public int CompararCom(IComparavel comparavel)
         {
-            return 3;
+            var other = comparavel as Automovel;
+            
+            if (VelocidadeMaxima < other.VelocidadeMaxima) {
+                return -1;
+            }
+            return VelocidadeMaxima > other.VelocidadeMaxima ? 1 : 0;
         }
         
         public void Imprimir()

@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace Diagrama.Domain
 {
@@ -6,6 +7,6 @@ namespace Diagrama.Domain
     {
         public int MaxAutomoveis { get; set; }
         public int NumAutomoveis { get; set; }
-        public IList<Automovel> ListaDeAutomoveis { get; set; }
+        public Automovel[] ListaDeAutomoveis { get; set; }
     }
 }
