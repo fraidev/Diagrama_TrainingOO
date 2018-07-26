@@ -31,7 +31,7 @@ namespace Diagrama
 
             foreach (var auto in automoveis.ListaDeAutomoveis)
             {
-                Console.WriteLine(auto.VelocidadeMaxima);
+                Console.WriteLine(auto.Marca + " " + auto.VelocidadeMaxima);
             }
         }
     }
