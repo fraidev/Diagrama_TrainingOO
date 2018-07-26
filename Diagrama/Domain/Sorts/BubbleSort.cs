@@ -1,8 +1,10 @@
-﻿namespace Diagrama.Domain.Sorts
+﻿using System.Collections.Generic;
+
+namespace Diagrama.Domain.Sorts
 {
     public class BubbleSort
     {
-        public void Ordenar(IComparavel comparavel)
+        public void Ordenar(IList<IComparavel> comparavel)
         {
             
         }

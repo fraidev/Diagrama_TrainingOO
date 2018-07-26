@@ -13,7 +13,6 @@ namespace Diagrama
             var aluno2= new Aluno("Felipe",10);
             var automoveis = new Automoveis();
             var selection = new SelectionSort();
-            selection.Ordenar(aluno.CompararCom(aluno2));
         }
     }
 }

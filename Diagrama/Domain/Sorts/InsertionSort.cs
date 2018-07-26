@@ -1,8 +1,10 @@
-﻿namespace Diagrama.Domain.Sorts
+﻿using System.Collections.Generic;
+
+namespace Diagrama.Domain.Sorts
 {
     public class InsertionSort
     {
-        public void Ordenar(IComparavel comparavel, int numElem)
+        public void Ordenar(IList<IComparavel> comparavel, int numElem)
         {
             
         }

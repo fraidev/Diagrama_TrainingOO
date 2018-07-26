@@ -2,7 +2,7 @@
 
 namespace Diagrama.Domain
 {
-    public class Aluno:IComparavel
+    public class Aluno : IComparavel
     {
         public string Nome { get; set; }
         public double Nota { get; set; }
@@ -13,15 +13,15 @@ namespace Diagrama.Domain
             Nota = nota;
         }
 
-        public int CompararCom(IComparavel comparavel)
-        {
-            return comparavel.GetHashCode();
-        }
-
         public void Imprimir()
         {
             Console.WriteLine(Nome);
             Console.WriteLine(Nota);
+        }
+
+        public int CompararCom(IComparavel comparavel)
+        {
+            throw new NotImplementedException();
         }
     }
 }
